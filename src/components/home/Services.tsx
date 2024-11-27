@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { SERVICES } from "@/constants/data";
 import { ServiceCard } from "./ServiceCard";
+import Link from "next/link";
 
 export const Services = () => (
-  <section className="relative w-full py-24">
+  <section className="relative w-full py-24" id="services">
     {/* Background gradients */}
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-violet-900/20 via-purple-900/10 to-transparent blur-3xl" />
@@ -45,13 +46,18 @@ export const Services = () => (
 
       {/* CTA section */}
       <div className="mt-16 flex flex-col items-center justify-center gap-6">
-        <Button
-          size="lg"
-          className="group bg-violet-600 px-8 hover:bg-violet-700"
+        <Link
+          href={"#contact"}
         >
-          Start Your Project
-          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </Button>
+          <Button
+            size="lg"
+            className="group bg-violet-600 px-8 hover:bg-violet-700"
+          >
+            Start Your Project
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
+        </Link>
+        
         <p className="text-sm text-gray-500">
           Free consultation • No commitment required
         </p>

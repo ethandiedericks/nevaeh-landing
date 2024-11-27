@@ -94,7 +94,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="relative w-full px-4 py-24 sm:px-6 lg:px-8">
+    <section className="relative w-full px-4 py-24 sm:px-6 lg:px-8" id="contact">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-violet-900/20 via-purple-900/10 to-transparent blur-3xl" />
 
       <div className="relative mx-auto max-w-[85rem]">

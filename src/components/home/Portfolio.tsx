@@ -4,7 +4,7 @@ import { Badge } from '../ui/badge';
 import { Sparkles } from 'lucide-react';
 
 export const Portfolio = () => (
-  <section className="relative w-full py-24">
+  <section className="relative w-full py-24" id="portfolio">
     {/* Background effects - using different patterns */}
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute left-1/2 top-1/2 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-violet-900/20 via-purple-900/10 to-transparent blur-3xl" />
