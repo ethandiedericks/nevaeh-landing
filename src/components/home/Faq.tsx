@@ -1,12 +1,19 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { FAQ } from '@/constants/data';
+import { Sparkles } from 'lucide-react';
 
 export const Faq = () => (
-  <section className="w-full px-4 py-24 sm:px-6 lg:px-8">
-    <div className="mx-auto max-w-[85rem]">
-      <h2 className="mx-auto max-w-4xl text-center text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-        Frequently Asked {' '}
-        <span className="font-serif italic text-gray-500">Questions</span>
+  <section className="relative w-full px-4 py-24 sm:px-6 lg:px-8">
+    {/* Background gradient */}
+    <div className="absolute inset-0 -z-10 bg-gradient-to-br from-violet-900/20 via-purple-900/10 to-transparent blur-3xl" />
+
+    {/* Content container */}
+    <div className="relative mx-auto max-w-[85rem]">
+    <h2 className="text-center text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+        Frequently Asked{' '}
+        <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">
+          Questions
+        </span>
       </h2>
       <p className="mx-auto mt-4 max-w-2xl text-center text-xl text-gray-400">
         Get answers to the most common questions about our services
@@ -16,10 +23,11 @@ export const Faq = () => (
         <Accordion type="single" collapsible>
           {FAQ.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="flex w-full items-center justify-between rounded-xl bg-white/5 p-4 text-left text-white hover:bg-white/10">
+              <AccordionTrigger className="flex items-center justify-between w-full rounded-xl bg-gradient-to-r from-violet-600/10 to-purple-900/10 p-4 text-left text-white hover:from-violet-600/20 hover:to-purple-900/20">
+                <Sparkles className="mr-2 h-5 w-5 text-violet-400" />
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="rounded-b-xl bg-white/5 p-4 text-gray-400">
+              <AccordionContent className="p-4 text-gray-400 bg-violet-900/10 rounded-b-xl">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

@@ -7,9 +7,8 @@ export const Portfolio = () => (
   <section className="relative w-full py-24">
     {/* Background effects - using different patterns */}
     <div className="absolute inset-0 overflow-hidden">
-      <div className="absolute left-1/4 top-1/4 h-[500px] w-[500px] rounded-full bg-purple-900/20 blur-3xl" />
-      <div className="absolute right-1/4 top-3/4 h-[400px] w-[400px] rounded-full bg-violet-900/20 blur-3xl" />
-      <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-violet-900/10 blur-3xl" />
+      <div className="absolute left-1/2 top-1/2 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-violet-900/20 via-purple-900/10 to-transparent blur-3xl" />
+      <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-violet-900/20 blur-3xl" />
     </div>
 
     {/* Main content */}
