@@ -24,7 +24,7 @@ export const Portfolio = () => (
 
         <h2 className="text-balance bg-gradient-to-b from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
           Our Latest{' '}
-          <span className="inline-block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text font-serif italic">
+          <span className="inline-block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text">
             Work
           </span>
         </h2>

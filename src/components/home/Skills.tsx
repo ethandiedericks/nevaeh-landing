@@ -26,7 +26,7 @@ export const Skills = () => (
 
         <h2 className="text-balance bg-gradient-to-b from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
           Expertise You Can{' '}
-          <span className="block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text font-serif italic">
+          <span className="block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text">
             Trust
           </span>
         </h2>
