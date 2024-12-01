@@ -8,7 +8,7 @@ export const Navbar = () => (
         nevaeh<span className="text-[#7f56da]">.dev</span>
       </h1>
     </Link>
-    <Link href="/contact">
+    <Link href={"#contact"}>
       <Button 
         variant="secondary" 
         size="lg" 

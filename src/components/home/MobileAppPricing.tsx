@@ -3,6 +3,7 @@ import { Badge } from "../ui/badge";
 import { MOBILE_APP_TIERS } from "@/constants/data";
 import { PricingCard } from "./PricingCard";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const MobileAppPricing = () => (
   <section className="relative w-full py-24">
@@ -40,12 +41,14 @@ export const MobileAppPricing = () => (
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <Button
-          size="lg"
-          className="mt-8 bg-[#7f56da] hover:bg-[#6a46c6]"
-        >
-          Get Started
-        </Button>
+        <Link href={"#contact"}>
+          <Button
+            size="lg"
+            className="mt-8 md:w-[300px] bg-[#7f56da] hover:bg-[#6a46c6]"
+          >
+            Get Started
+          </Button>
+        </Link>
       </div>
     </div>
   </section>

@@ -3,6 +3,7 @@ import { PricingCard } from "./PricingCard";
 import { Sparkles } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const WebsitePricing = () => (
   <section className="relative w-full py-24">
@@ -43,12 +44,14 @@ export const WebsitePricing = () => (
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <Button
-          size="lg"
-          className="mt-8 bg-[#7f56da] hover:bg-[#6a46c6]"
-        >
-          Get Started
-        </Button>
+        <Link href={"#contact"}>
+          <Button
+            size="lg"
+            className="mt-8 md:w-[300px] bg-[#7f56da] hover:bg-[#6a46c6]"
+          >
+            Get Started
+          </Button>
+        </Link>
       </div>
       
     </div>
