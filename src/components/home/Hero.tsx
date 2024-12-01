@@ -75,18 +75,6 @@ export const Hero = () => (
           </div>
         ))}
       </div>
-
-      {/* Video Section */}
-      <div className="mt-16 w-full max-w-4xl overflow-hidden rounded-2xl border border-violet-800/20 bg-black/50 shadow-2xl backdrop-blur-sm">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          src="/hero_vid.MOV"
-          className="h-auto w-full"
-        />
-      </div>
     </div>
   </section>
 );
