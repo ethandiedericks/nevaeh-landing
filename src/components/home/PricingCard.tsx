@@ -1,5 +1,4 @@
 import { PricingTier } from '@/types';
-import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 
 export const PricingCard = ({ name, price, description, features, highlighted }: PricingTier) => (
@@ -20,16 +19,6 @@ export const PricingCard = ({ name, price, description, features, highlighted }:
           </li>
         ))}
       </ul>
-      <Button
-        size="lg"
-        className={`mt-8 w-full ${
-          highlighted
-            ? 'bg-[#7f56da] hover:bg-[#6a46c6]'
-            : 'bg-white/10 hover:bg-white/20'
-        }`}
-      >
-        Get Started
-      </Button>
     </div>
   </div>
 );

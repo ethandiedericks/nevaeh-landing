@@ -2,6 +2,7 @@ import { Sparkles } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { MOBILE_APP_TIERS } from "@/constants/data";
 import { PricingCard } from "./PricingCard";
+import { Button } from "../ui/button";
 
 export const MobileAppPricing = () => (
   <section className="relative w-full py-24">
@@ -37,6 +38,14 @@ export const MobileAppPricing = () => (
         {MOBILE_APP_TIERS.map((tier) => (
           <PricingCard key={tier.name} {...tier} />
         ))}
+      </div>
+      <div className="flex items-center justify-center">
+        <Button
+          size="lg"
+          className="mt-8 bg-[#7f56da] hover:bg-[#6a46c6]"
+        >
+          Get Started
+        </Button>
       </div>
     </div>
   </section>

@@ -2,6 +2,7 @@ import { PRICING_TIERS } from "@/constants/data";
 import { PricingCard } from "./PricingCard";
 import { Sparkles } from "lucide-react";
 import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 
 export const WebsitePricing = () => (
   <section className="relative w-full py-24">
@@ -24,7 +25,7 @@ export const WebsitePricing = () => (
 
         <h2 className="text-balance bg-gradient-to-b from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
           Choose the Perfect {' '}
-          <span className="inline-block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text font-serif italic">
+          <span className="inline-block bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text">
             Package
           </span>
         </h2>
@@ -41,6 +42,15 @@ export const WebsitePricing = () => (
           <PricingCard key={tier.name} {...tier} />
         ))}
       </div>
+      <div className="flex items-center justify-center">
+        <Button
+          size="lg"
+          className="mt-8 bg-[#7f56da] hover:bg-[#6a46c6]"
+        >
+          Get Started
+        </Button>
+      </div>
+      
     </div>
   </section>
 );
