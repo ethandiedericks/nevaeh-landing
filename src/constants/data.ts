@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
       "Next.js, React"
     ],
     imageUrl: "/joubert_psychology.png",
-    link: "https://joubertpsychology.com"
+    link: "https://joubert-psychology-nextjs.vercel.app/"
   },
   {
     title: "John B. Scott Attorneys",
