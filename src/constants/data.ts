@@ -11,7 +11,7 @@ export const SERVICES: Service[] = [
   {
     icon: Wrench,
     title: "Development",
-    description: "We'll build your site in Framer based on your designs and stay connected on Slack."
+    description: "We'll build your site in Nextjs based on your designs and keep you updated throughout the process."
   },
   {
     icon: Rocket,
